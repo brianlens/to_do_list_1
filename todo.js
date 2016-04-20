@@ -6,18 +6,30 @@
   todoCounter.innerHTML = totalTodos;
 
 function updateCounters() {
-  // Total number of todos
-  var totalCount = document.getElementById('total-count');
-  var totalTodos = document.getElementsByClassName("todo").length;
-  totalCount.innerHTML = totalTodos;
-  // Total number of completed todos
-  var completedCount = document.getElementById('completed-count');
-  var completedCount = document.getElementsByClassName("completed").length;
-  completedCount.innerHTML = completedTodos;
-  // Total number of uncompleted todos
-  var todoCount = document.getElementsById('todo-count');
-  var uncompletedTodos = totalTodos - completedTodos;
-  todoCount.innerHTML = uncompletedTodos;
-}
+    // Total number of todos
+    var totalCount = document.getElementById('total-count');
+    var totalTodos = document.getElementsByClassName("todo").length;
+    totalCount.innerHTML = totalTodos;
+    // Total number of completed todos
+    var completedCount = document.getElementById('completed-count');
+    var completedCount = document.getElementsByClassName("completed").length;
+    completedCount.innerHTML = completedTodos;
+    // Total number of uncompleted todos
+    var todoCount = document.getElementsById('todo-count');
+    var uncompletedTodos = totalTodos - completedTodos;
+    todoCount.innerHTML = uncompletedTodos;
+  }
+updateCounters();
+
+function toggleDone();
+    var checkbox = this;
+    // check the checked status of the checkbox
+    if (checkbox.checked) {
+      // the "completed" class should be set on the parent element, <li>
+      checkbox.parentElement.className = "todo completed";
+    } else {
+      checkbox.parentElement.className = "todo";
+    }
 
 updateCounters();
+}
