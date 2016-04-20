@@ -21,7 +21,8 @@ function updateCounters() {
   }
 updateCounters();
 
-function toggleDone();
+
+function toggleDone() {
     var checkbox = this;
     // check the checked status of the checkbox
     if (checkbox.checked) {
