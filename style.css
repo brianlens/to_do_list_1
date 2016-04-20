@@ -1,46 +1,52 @@
 body {
-      font-family: Helvetica, Arial, sans-serif;
+      font-family: 'Brandon Grotesque', Arial, sans-serif;
       font-size: 18px;
+      background-color: #ffb889;
     }
 
     .container {
-      margin: 20px auto;
+      margin: 250px auto;
       width: 500px;
-      border: 1px solid #e6e6e6;
+      border: 4px solid #e6e6e6;
       border-radius: 3px;
+      border-top-right-radius: 100px;
     }
 
     h1 {
-      text-align: center;
+      margin-left:25px;
+      color:#e6e6e6;
+      text-shadow: 2px 2px #323232;
     }
 
     form {
       padding: 0 0 20px;
+
     }
 
     input#new-todo {
       display: block;
-      width: 478px;
-      border-radius: 3px;
+      width: 487px;
       border: 1px solid #e6e6e6;
-      padding: 10px;
+      padding: 6px;
       font-size: 18px;
+      font-family:'Brandon Grotesque'
+
     }
 
     ul#todolist {
       list-style: none;
       margin: 0;
       padding: 0;
+
     }
 
     ul#todolist li {
       padding: 5px;
-      border: 1px solid #e6e6e6;
-      border-radius: 3px;
+
     }
 
     ul#todolist li:hover {
-      background-color: #e6e6e6;
+      background-color: #ffd39b;
     }
 
     ul#todolist .todo.completed label {

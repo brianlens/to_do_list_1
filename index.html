@@ -4,19 +4,20 @@
   <link rel="stylesheet" href="style.css">
   <meta charset="utf-8">
   <title>TodoList</title>
+<script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
 </head>
 <body>
   <div class="container">
-      <h1>TodoList</h1>
+      <h1>       What do you want to finish?</h1>
 
       <form>
-        <input type="text" id="new-todo" placeholder="What needs to be done?">
+        <input type="text" id="new-todo" placeholder="Tasks go here">
       </form>
 
       <ul id="todolist">
         <li class="todo">
           <input id="todo-1" type="checkbox" value="1">
-          <label for="todo-1">Sweep the floor</label>
+          <label for="todo-1">Check me</label>
         </li>
         <li class="todo completed">
           <input id="todo-2" type="checkbox" value="1" checked="checked">
@@ -24,11 +25,12 @@
         </li>
       </ul>
       <div class="footer">
-        Todo: <span id="todo-count">1</span> •
-        Done: <span id="completed-count">0</span> •
-        Total: <span id="total-count">1</span>
+        To do: <span id="todo-count">1</span> • •
+        Done: <span id="completed-count">0</span> • •
+        Total: <span id="total-count">1</span> • •
+        <a href="#" id="clean-up">Clean up my list please.</a>
       </div>
     </div>
-<script src="todo.js"></script>
+<script src="todo-jq.js"></script>
 </body>
 </html>
